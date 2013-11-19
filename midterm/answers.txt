@@ -1,0 +1,33 @@
+
+ Questions (20pts):
+ - What are the three uses of the curly brackets {} in Ruby?
+  Curly brackets are used for: 
+    - Hashes
+    - In place of "do" and "end" for blocks that can fit in a single line
+    - Invoking Ruby code within a string (#exp{})
+
+ - What is a regular expression and what is a common use for them? 
+  A regular expression is a pattern that can be matched against a string. A common use for them are "find and replace" operations.
+
+ - What is the difference between how a String, a symbol, a FixNum, and a Float are stored in Ruby?
+  A String object holds and manipulates an arbitrary sequence of bytes, typically representing chracters. Symbols are created for a given name or string for the duration of a program's execution, regardless of context or meaning of the name. A FixNum holds specifically Integer values that are represented in native machine word -- it has an immediate vaule. A Float, however, represents inexact real numbers and is stored as such using double-precision floating point representation. 
+
+ - Are these two statements equivalent? Why or Why Not?
+   1. x, y = "hello", "hello"
+   2. x = y = "hello"
+
+   The two statements are not equivalent. In case 1, "hello" is mapped individually to x, and to y. In case 2, "hello" is mapped to y, which is in turn mapped to "x". If the value of y changes, so does x -- which is certainly not the case in case 1.
+
+- What is the difference between a Range and an Array?
+  A range expresses the span of values between two extremes (objects, but usually numbers), exclusively or inclusively -- therefore the objects necessarily belong to the same class. An array is simply an indexed list of objects, and the objects needn't belong to the same class.
+
+- Why would I use a Hash instead of an Array?
+  An array is useful for breaking objects down into simple elements of a list, whereas a hash would be more advantageous for parsing through that list and indexing the elements by the number of times they appear.
+
+- What is your favorite thing about Ruby so far?
+  The loose syntax is pretty refreshing.
+
+- What is your least favorite thing about Ruby so far?
+  Somehow...the loose syntax is also quite frustrating.
+
+
